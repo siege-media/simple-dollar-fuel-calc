@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fuel-calc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Fuel Calculator</title>
+</head>
+<body>
+    
+
+<section role="region" class="fuel-calc-section">
+
+<div class="fuel-calc-container">
+    <h2>Fuel Efficiency Calculator</h2>
+    <div class="fuel-calc-top-section">
+        <img src="fuel-pump.png" alt="Illustration of a gas pump.">
+        <div class="fuel-calc-form">
+            <form>
+                <fieldset>
+                    <legend>Fuel Efficiency Calculator</legend>
+                    <p>
+                        <label for="mpg">Vehicle MPG:</label>
+                        <input type="text" name="mpg" id="mpg" value="24.5">
+                    </p>
+                    <p>
+                        <label for="miles" class="miles-label">Highway miles per day:</label>
+                        <input type="text" name="miles" id="miles" value="12">
+                    </p>
+                    <p>
+                        <label for="price">Price of gas: $</label>
+                        <input type="text" name="price" id="price" value="2.27">
+                    </p>
+                </fieldset>
+                <button type="submit" id="fuel-submit-button">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <div class="fuel-calc-results">
+        <table>
+            <tr>
+                <th style="border-left: none;">Speed</th>
+                <td class="bold-speed" id="speed-55" data-mph="55">55 mph</td>
+                <td class="bold-speed" id="speed-60" data-mph="60">60 mph</td>
+                <td class="bold-speed" id="speed-65" data-mph="65">65 mph</td>
+                <td class="bold-speed" id="speed-70" data-mph="70">70 mph</td>
+                <td class="bold-speed" id="speed-75" data-mph="75">75 mph</td>
+                <td class="bold-speed" id="speed-80" data-mph="80" style="border-bottom: none;">80 mph</td>
+            </tr>
+            <tr id="time-tr">
+                <th>Time</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="border-bottom: none;"></td>
+            </tr>
+            <tr id="mpg-tr">
+                <th>MPG</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="border-bottom: none;"></td>
+            </tr>
+            <tr id="cost-day-tr">
+                <th>Cost/day</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="border-bottom: none;"></td>
+            </tr>
+            <tr id="cost-year-tr">
+                <th style="border-right: none;">Cost/year</th>
+                <td style="border-right: none;"></td>
+                <td style="border-right: none;"></td>
+                <td style="border-right: none;"></td>
+                <td style="border-right: none;"></td>
+                <td style="border-right: none;"></td>
+                <td style="border-right: none; border-bottom: none;"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="fuel-calc-bottom-section">
+        <div class="fuel-calc-bottom-text">
+            <p class="bold-source-info">Source information can be found at:</p>
+        <p><a href="https://thesimpledollar.com/insurance/auto/fuel-efficiency-driving-guide">https://thesimpledollar.com/insurance/auto/fuel-efficiency-driving-guide</a></p>
+        </div>
+        <img src="simple-dollar.png" alt="The Simple Dollar logo">
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./fuel-calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+.fuel-calc-container {
+    display: block;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3F1E9;
+}
+
+@media screen and (max-width: 1025px) {
+    .fuel-calc-container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .fuel-calc-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fuel-calc-results {
+        width: 90% !important;
+        overflow: scroll;
+    }
+}
+
+.fuel-calc-container h2 {
+    box-sizing: border-box;
+    color: white;
+    background-color: #0A877F;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.fuel-calc-top-section {
+    background-color: #F3F1E9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+@media screen and (max-width: 590px) {
+    .fuel-calc-top-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+.fuel-calc-top-section img {
+    width: 40%;
+}
+
+@media screen and (max-width: 590px) {
+    .fuel-calc-top-section img {
+        width: 100%;
+    }
+}
+
+fieldset {
+    border: none;
+    padding-right: 0;
+}
+
+legend {
+    display: none;
+}
+
+.fuel-calc-form {
+    margin-top: 45px;
+}
+
+.fuel-calc-form p {
+    box-sizing: border-box;
+    margin-bottom: 21px;
+}
+
+.fuel-calc-form form {
+    text-align: right;
+}
+
+@media screen and (max-width: 590px) {
+    .fuel-calc-form form {
+        text-align: center;
+    }
+}
+
+.fuel-calc-form label {
+    display: inline-block;
+    box-sizing: border-box;
+    max-height: 100%;
+    color: #004D47;
+    font-size: 20px;
+    font-weight: 800 !important;
+    margin-right: 10px;
+}
+
+.miles-label {
+    width: 60%;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 590px) {
+    .miles-label {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .fuel-calc-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.fuel-calc-form input {
+    border: 1.5px solid #0A877F;
+    text-align: center;
+    width: 60px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #004D47;
+}
+
+.fuel-calc-form form button {
+    height: 50px;
+    width: 200px;
+    background-color: #17A74B;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.fuel-calc-form form button:hover, .fuel-calc-form form button:focus {
+    background-color: rgba(23, 167, 76, 0.062);
+    border: 1px solid #17A74B;
+    color: #17A74B;
+    cursor: pointer;
+}
+
+.fuel-calc-results {
+    width: 570px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-bottom: 40px;
+}
+
+.fuel-calc-results table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+.fuel-calc-results table tr {
+	display: table-cell;
+}
+.fuel-calc-results table th {
+    width: 20%;
+    background-color: #17A74B;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #004D47;
+    border-top: none;
+}
+.fuel-calc-results table tr td {
+    display: block;
+    height: 30px;
+    padding: 10px;
+    padding-left: 15px;
+    text-align: left;
+    border: 1px solid #004D47;
+}
+
+.bold-speed {
+    font-weight: 800;
+    color: #0A877F;
+    border-left: none !important;
+}
+
+.fuel-calc-bottom-section {
+    background-color: #004D47;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fuel-calc-bottom-text {
+    padding-top: 15px;
+}
+
+.fuel-calc-bottom-section p {
+    margin: 0;
+}
+
+.bold-source-info {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.fuel-calc-bottom-section a {
+    color: rgba(255, 255, 255, 0.623);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.fuel-calc-bottom-section img {
+    width: 18%;
+}
+
+.fuel-calc-bottom-section a:hover, .fuel-calc-bottom-section a:focus {
+    color: white;
+}
