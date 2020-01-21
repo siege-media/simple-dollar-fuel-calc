@@ -27,12 +27,17 @@ function createTimeChart(times, miles){
 
     for (let i = 0; i < times.length; i++) {
 
-        let minutes = times[i];
-        let sign = minutes < 0 ? "-" : "";
-        let min = Math.floor(Math.abs(minutes)* 60);
-        let sec = Math.floor(min * 60 * 60 / 1000);
-        let convertedTime = sign + (min < 10 ? "0" : "") + min + ":" + (sec < 10 ? "0" : "") + sec;
+        let minutes = times[i] * 60;
+        let hours = (minutes / 60);
+        console.log(minutes);
+        let rhours = Math.floor(hours);
+        let min = (hours - rhours) * 60;
+        let rmin = Math.floor(min);
+        let sec = (min - rmin) * 60;
+        let rsec = Math.floor(sec);
+        let convertedTime = (rhours < 10 ? "0" + rhours : rhours) + ":" + (rmin < 10 ? "0" + rmin : rmin) + ":" + (rsec < 10 ? rsec + "0" : rsec);
         timeChart.push(convertedTime);
+
     }
 
     return timeChart;
@@ -147,6 +152,20 @@ function userSubmit() {
 
 }
 
+function embedClick() {
+    jQuery('#calc-embed-button').click(function() {
+        jQuery('.calc-embed-code').css('display', 'block');
+    })
+
+    jQuery(document).mouseup(function (e) { 
+        if ($(e.target).closest("#calc-embed-code").length 
+                    === 0) { 
+            $("#calc-embed-code").hide(); 
+        } 
+    });
+}
+
 jQuery(userSubmit);
+jQuery(embedClick);
 
 

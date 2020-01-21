@@ -25,15 +25,15 @@
                     <legend>Fuel Efficiency Calculator</legend>
                     <p>
                         <label for="mpg">Vehicle MPG:</label>
-                        <input type="text" name="mpg" id="mpg" value="24.5">
+                        <input type="text" name="mpg" id="mpg" value="24.9">
                     </p>
                     <p>
                         <label for="miles" class="miles-label">Highway miles per day:</label>
-                        <input type="text" name="miles" id="miles" value="12">
+                        <input type="text" name="miles" id="miles" value="36.9">
                     </p>
                     <p>
                         <label for="price">Price of gas: $</label>
-                        <input type="text" name="price" id="price" value="2.27">
+                        <input type="text" name="price" id="price" value="2.57">
                     </p>
                 </fieldset>
                 <button type="submit" id="fuel-submit-button">SUBMIT</button>
@@ -52,7 +52,7 @@
                 <td class="bold-speed" id="speed-80" data-mph="80" style="border-bottom: none;">80 mph</td>
             </tr>
             <tr id="time-tr">
-                <th>Time</th>
+                <th>Time (HH:MM:SS)</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -98,6 +98,21 @@
     </div>
 </div>
 
+<div id="calc-embed-code" class="calc-embed-code">
+    <xmp>
+    <iframe 
+        src="https://siege-media.github.io/simple-dollar-fuel-calc" 
+        scrolling="yes" 
+        frameBorder="0" 
+        style=" width: 100%; height: 1005px; overflow: hidden; display: block; margin-right: auto; margin-left: auto;">
+    </iframe>
+    </xmp>
+                
+         
+    </div>
+    
+    <button id="calc-embed-button" class="calc-embed-button">Embed on your site</button>
+    
 </section>
 
 

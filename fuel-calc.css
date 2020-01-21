@@ -223,3 +223,25 @@ legend {
 .fuel-calc-bottom-section a:hover, .fuel-calc-bottom-section a:focus {
     color: white;
 }
+
+.calc-embed-button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calc-embed-code {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background-color: white;
+    border: 2px solid #004D47;
+    width: 30%;
+    height: 150px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
