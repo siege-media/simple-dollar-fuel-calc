@@ -158,9 +158,9 @@ function embedClick() {
     })
 
     jQuery(document).mouseup(function (e) { 
-        if ($(e.target).closest("#calc-embed-code").length 
+        if (jQuery(e.target).closest("#calc-embed-code").length 
                     === 0) { 
-            $("#calc-embed-code").hide(); 
+            jQuery("#calc-embed-code").css('display', 'none'); 
         } 
     });
 }
