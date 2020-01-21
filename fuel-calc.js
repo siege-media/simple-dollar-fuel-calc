@@ -153,9 +153,14 @@ function userSubmit() {
         e.preventDefault();
 
         //Set up variables and arrays
-        let userMPG = document.getElementById("mpg").value;
-        let miles = document.getElementById("miles").value;
-        let price = document.getElementById("price").value;
+        let userMPG = 24.9;
+        let miles = 36.9;
+        let price = 2.57;
+
+        //Set form values to national averages
+        jQuery('#mpg').val('24.9');
+        jQuery('#miles').val('36.9');
+        jQuery('#price').val('2.57');
      
         createTimeChart(times, miles);
         createMPGChart(userMPG);
