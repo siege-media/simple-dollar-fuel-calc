@@ -1,3 +1,7 @@
+.fuel-calc-section {
+    position: relative;
+}
+
 .fuel-calc-container {
     display: block;
     width: 650px;
@@ -132,13 +136,17 @@ legend {
 
 .fuel-calc-form form button {
     height: 50px;
-    width: 200px;
+    width: 250px;
     background-color: #17A74B;
     color: white;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 1px;
     border: none;
+}
+
+#fuel-submit-button-1 {
+    margin-bottom: 20px;
 }
 
 .fuel-calc-form form button:hover, .fuel-calc-form form button:focus {
@@ -166,6 +174,7 @@ legend {
 }
 .fuel-calc-results table th {
     width: 20%;
+    height: 68px;
     background-color: #17A74B;
     color: white;
     padding: 15px;
@@ -197,6 +206,12 @@ legend {
     justify-content: space-between;
 }
 
+@media (max-width: 500px) {
+    .fuel-calc-bottom-section {
+        flex-direction: column;
+    }
+}
+
 .fuel-calc-bottom-text {
     padding-top: 15px;
 }
@@ -217,7 +232,7 @@ legend {
 }
 
 .fuel-calc-bottom-section img {
-    width: 18%;
+    width: 165px;
 }
 
 .fuel-calc-bottom-section a:hover, .fuel-calc-bottom-section a:focus {
@@ -225,13 +240,20 @@ legend {
 }
 
 .calc-embed-button {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.623);
     position: relative;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 60px;
+    padding-left: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.calc-embed-button:hover, .calc-embed-button:focus {
+    color: white;
 }
 
 .calc-embed-code {

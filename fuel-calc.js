@@ -37,7 +37,6 @@ function createTimeChart(times, miles){
         let rsec = Math.floor(sec);
         let convertedTime = (rhours < 10 ? "0" + rhours : rhours) + ":" + (rmin < 10 ? "0" + rmin : rmin) + ":" + (rsec < 10 ? rsec + "0" : rsec);
         timeChart.push(convertedTime);
-
     }
 
     return timeChart;
@@ -150,6 +149,26 @@ function userSubmit() {
         clearArrays();
     })
 
+    jQuery('#fuel-submit-button-1').click(function(e){
+        e.preventDefault();
+
+        //Set up variables and arrays
+        let userMPG = document.getElementById("mpg").value;
+        let miles = document.getElementById("miles").value;
+        let price = document.getElementById("price").value;
+     
+        createTimeChart(times, miles);
+        createMPGChart(userMPG);
+        createCostPerDayChart(effectiveMPG, price, miles);
+        createCostPerYearChart(costsPerDay);
+        costFormatting(costsPerDay, costsPerYear)
+
+        addTableColumns(timeChart, effectiveMPG, formattedCostsPerDay, formattedCostsPerYear);
+
+        // Reset arrays when user submits new form values
+        clearArrays();
+    })
+
 }
 
 function embedClick() {
@@ -160,7 +179,7 @@ function embedClick() {
     jQuery(document).mouseup(function (e) { 
         if (jQuery(e.target).closest("#calc-embed-code").length 
                     === 0) { 
-            jQuery("#calc-embed-code").css('display', 'none'); 
+            jQuery("#calc-embed-code").css('display', 'none');  
         } 
     });
 }
