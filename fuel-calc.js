@@ -29,7 +29,6 @@ function createTimeChart(times, miles){
 
         let minutes = times[i] * 60;
         let hours = (minutes / 60);
-        console.log(minutes);
         let rhours = Math.floor(hours);
         let min = (hours - rhours) * 60;
         let rmin = Math.floor(min);
