@@ -197,6 +197,7 @@ legend {
     display: block;
     height: 30px;
     padding: 10px;
+    padding-top: 20px;
     text-align: center;
     border: 1px solid #004D47;
 }
