@@ -156,7 +156,6 @@ function userSubmit() {
         let miles = 36.9;
         let price = 2.57;
 
-        //Set form values to national averages
         jQuery('#mpg').val('24.9');
         jQuery('#miles').val('36.9');
         jQuery('#price').val('2.57');
@@ -188,7 +187,15 @@ function embedClick() {
     });
 }
 
+function enableAvgButton() {
+    jQuery('form').keyup(function() {
+        jQuery('#fuel-submit-button-1').removeAttr('disabled');
+        jQuery('.natl-avg-button').css('background-color', '#17A74B');
+    })
+}
+
 jQuery(userSubmit);
 jQuery(embedClick);
+jQuery(enableAvgButton);
 
 

@@ -106,7 +106,7 @@ legend {
 }
 
 .miles-label {
-    width: 60%;
+    width: 70%;
     vertical-align: middle;
 }
 
@@ -134,10 +134,21 @@ legend {
     color: #004D47;
 }
 
-.fuel-calc-form form button {
+.fuel-calc-form-button {
     height: 50px;
     width: 250px;
     background-color: #17A74B;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.natl-avg-button {
+    height: 50px;
+    width: 250px;
+    background-color: grey;
     color: white;
     font-size: 20px;
     font-weight: 800;
@@ -186,8 +197,7 @@ legend {
     display: block;
     height: 30px;
     padding: 10px;
-    padding-left: 15px;
-    text-align: left;
+    text-align: center;
     border: 1px solid #004D47;
 }
 
