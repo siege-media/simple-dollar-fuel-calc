@@ -15,121 +15,121 @@
 
 <section role="region" class="fuel-calc-section">
 
-<div class="fuel-calc-container">
-    <h2>Fuel Efficiency Calculator</h2>
-    <div class="fuel-calc-top-section">
-        <img src="fuel-pump.png" alt="Illustration of a gas pump.">
-        <div class="fuel-calc-form">
-            <form>
-                <fieldset>
-                    <legend>Fuel Efficiency Calculator</legend>
-                    <p>
-                        <label for="mpg">Vehicle MPG:</label>
-                        <input type="text" name="mpg" id="mpg" value="24.9">
-                    </p>
-                    <p>
-                        <label for="miles" class="miles-label">Highway miles per day:</label>
-                        <input type="text" name="miles" id="miles" value="36.9">
-                    </p>
-                    <p>
-                        <label for="price">Price of gas: $</label>
-                        <input type="text" name="price" id="price" value="2.57">
-                    </p>
-                </fieldset>
-                <button class="natl-avg-button" type="submit" id="fuel-submit-button-1" disabled="disabled">Show U.S. Average</button>
-                <button class="fuel-calc-form-button" type="submit" id="fuel-submit-button">SUBMIT</button>
-            </form>
+    <div class="fuel-calc-container">
+        <h2>Fuel Efficiency Calculator</h2>
+        <div class="fuel-calc-top-section">
+            <img src="fuel-pump.png" alt="Illustration of a gas pump.">
+            <div class="fuel-calc-form">
+                <form>
+                    <fieldset>
+                        <legend>Fuel Efficiency Calculator</legend>
+                        <p>
+                            <label for="mpg">Vehicle MPG:</label>
+                            <input type="text" name="mpg" id="mpg" value="24.9">
+                        </p>
+                        <p>
+                            <label for="miles" class="miles-label">Highway miles per day:</label>
+                            <input type="text" name="miles" id="miles" value="36.9">
+                        </p>
+                        <p>
+                            <label for="price">Price of gas: $</label>
+                            <input type="text" name="price" id="price" value="2.57">
+                        </p>
+                    </fieldset>
+                    <button class="natl-avg-button" type="submit" id="fuel-submit-button-1" disabled="disabled">Show U.S. Average</button>
+                    <button class="fuel-calc-form-button" type="submit" id="fuel-submit-button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        <div class="fuel-calc-results">
+            <table>
+                <tr>
+                    <th style="border-left: none;">Speed</th>
+                    <td class="bold-speed" id="speed-55" data-mph="55">55 mph</td>
+                    <td class="bold-speed" id="speed-60" data-mph="60">60 mph</td>
+                    <td class="bold-speed" id="speed-65" data-mph="65">65 mph</td>
+                    <td class="bold-speed" id="speed-70" data-mph="70">70 mph</td>
+                    <td class="bold-speed" id="speed-75" data-mph="75">75 mph</td>
+                    <td class="bold-speed" id="speed-80" data-mph="80" style="border-bottom: none;">80 mph</td>
+                </tr>
+                <tr id="time-tr">
+                    <th>Drive Time <br> HH:MM:SS</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="border-bottom: none;"></td>
+                </tr>
+                <tr id="mpg-tr">
+                    <th>MPG</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="border-bottom: none;"></td>
+                </tr>
+                <tr id="cost-day-tr">
+                    <th>Cost/day</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="border-bottom: none;"></td>
+                </tr>
+                <tr id="cost-year-tr">
+                    <th style="border-right: none;">Cost/year</th>
+                    <td style="border-right: none;"></td>
+                    <td style="border-right: none;"></td>
+                    <td style="border-right: none;"></td>
+                    <td style="border-right: none;"></td>
+                    <td style="border-right: none;"></td>
+                    <td style="border-right: none; border-bottom: none;"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="fuel-calc-bottom-section">
+            <div class="fuel-calc-bottom-text">
+                <p class="bold-source-info">Source information can be found at:</p>
+            <p><a target="_blank" href="https://thesimpledollar.com/insurance/auto/fuel-efficiency-driving-guide">https://thesimpledollar.com/insurance/auto/fuel-efficiency-driving-guide</a></p>
+            <button id="calc-embed-button" class="calc-embed-button">Embed on your site</button>
+            </div>
+            <img src="simple-dollar.png" alt="The Simple Dollar logo">
         </div>
     </div>
-    <div class="fuel-calc-results">
-        <table>
-            <tr>
-                <th style="border-left: none;">Speed</th>
-                <td class="bold-speed" id="speed-55" data-mph="55">55 mph</td>
-                <td class="bold-speed" id="speed-60" data-mph="60">60 mph</td>
-                <td class="bold-speed" id="speed-65" data-mph="65">65 mph</td>
-                <td class="bold-speed" id="speed-70" data-mph="70">70 mph</td>
-                <td class="bold-speed" id="speed-75" data-mph="75">75 mph</td>
-                <td class="bold-speed" id="speed-80" data-mph="80" style="border-bottom: none;">80 mph</td>
-            </tr>
-            <tr id="time-tr">
-                <th>Time (HH:MM:SS)</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td style="border-bottom: none;"></td>
-            </tr>
-            <tr id="mpg-tr">
-                <th>MPG</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td style="border-bottom: none;"></td>
-            </tr>
-            <tr id="cost-day-tr">
-                <th>Cost/day</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td style="border-bottom: none;"></td>
-            </tr>
-            <tr id="cost-year-tr">
-                <th style="border-right: none;">Cost/year</th>
-                <td style="border-right: none;"></td>
-                <td style="border-right: none;"></td>
-                <td style="border-right: none;"></td>
-                <td style="border-right: none;"></td>
-                <td style="border-right: none;"></td>
-                <td style="border-right: none; border-bottom: none;"></td>
-            </tr>
-        </table>
+    
+    <div id="calc-embed-code" class="calc-embed-code">
+    <xmp>
+    <iframe 
+        src="https://siege-media.github.io/simple-dollar-fuel-calc" 
+        scrolling="yes" 
+        frameBorder="0" 
+        style=" width: 100%; height: 1005px; overflow: hidden; display: block; margin-right: auto; margin-left: auto;">
+    </iframe>
+    </xmp>
+                
+         
     </div>
-    <div class="fuel-calc-bottom-section">
-        <div class="fuel-calc-bottom-text">
-            <p class="bold-source-info">Source information can be found at:</p>
-        <p><a target="_blank" href="https://thesimpledollar.com/insurance/auto/fuel-efficiency-driving-guide">https://thesimpledollar.com/insurance/auto/fuel-efficiency-driving-guide</a></p>
-        <button id="calc-embed-button" class="calc-embed-button">Embed on your site</button>
-        </div>
-        <img src="simple-dollar.png" alt="The Simple Dollar logo">
-    </div>
-</div>
-
-<div id="calc-embed-code" class="calc-embed-code">
-<xmp>
-<iframe 
-    src="https://siege-media.github.io/simple-dollar-fuel-calc" 
-    scrolling="yes" 
-    frameBorder="0" 
-    style=" width: 100%; height: 1005px; overflow: hidden; display: block; margin-right: auto; margin-left: auto;">
-</iframe>
-</xmp>
-            
-     
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript" src="./fuel-calc.js"></script>
-</body>
+    
+    
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script type="text/javascript" src="./fuel-calc.js"></script>
+    </body>
 </html>

@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .fuel-calc-section {
     position: relative;
 }
@@ -33,7 +35,8 @@
 }
 
 .fuel-calc-container h2 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     color: white;
     background-color: #0A877F;
     width: 100%;
@@ -44,21 +47,36 @@
 
 .fuel-calc-top-section {
     background-color: #F3F1E9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 40px;
 }
 
 @media screen and (max-width: 590px) {
     .fuel-calc-top-section {
-        flex-direction: column;
-        justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 }
 
 .fuel-calc-top-section img {
-    width: 40%;
+    /* width: 40%; */
+    width: 50%; 
+    -ms-flex-item-align: start; 
+        align-self: flex-start;
 }
 
 @media screen and (max-width: 590px) {
@@ -81,7 +99,8 @@ legend {
 }
 
 .fuel-calc-form p {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 21px;
 }
 
@@ -97,7 +116,8 @@ legend {
 
 .fuel-calc-form label {
     display: inline-block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     max-height: 100%;
     color: #004D47;
     font-size: 20px;
@@ -188,7 +208,7 @@ legend {
     height: 68px;
     background-color: #17A74B;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
     border: 1px solid #004D47;
     border-top: none;
@@ -212,14 +232,24 @@ legend {
     background-color: #004D47;
     padding: 40px;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 @media (max-width: 500px) {
     .fuel-calc-bottom-section {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -243,7 +273,8 @@ legend {
 }
 
 .fuel-calc-bottom-section img {
-    width: 165px;
+    /* width: 165px; */
+    width: 200px;
 }
 
 .fuel-calc-bottom-section a:hover, .fuel-calc-bottom-section a:focus {
